@@ -17,10 +17,11 @@ function App() {
   useEffect(() => {
     axios
       .get(
-        "http://data.fixer.io/api/latest?access_key=e385a9376f90e67c4aaf69fe088e1ae0&format=1"
+        // "http://data.fixer.io/api/latest?access_key=e385a9376f90e67c4aaf69fe088e1ae0&format=1"
+        "https://api.freecurrencyapi.com/v1/latest?apikey=IMiGvKNQNflo9HKlJBFDfiD02qxe8hWRKbPpM29L"
       )
       .then((response) => {
-        setRates(response.data.rates);
+        setRates(response.data.data);
       });
   }, []);
   function format(number){
