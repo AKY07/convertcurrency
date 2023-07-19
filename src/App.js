@@ -45,7 +45,7 @@ function App() {
     setAmount1(format(amount2 * rates[currency1] / rates[currency2]));
     setCurrency2(currency2)
   }
-
+//convert
 
   return (
     <div>
